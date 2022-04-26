@@ -1,0 +1,16 @@
+[build]
+rustc-wrapper = 'sccache'
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = ['-Clink-arg=-fuse-ld=lld', '-Zshare-generics=y']
+linker = 'clang'
+
+[target.x86_64-pc-windows-msvc]
+rustflags = ['-Zshare-generics=y']
+linker = 'rust-lld.exe'
+
+[profile.release]
+strip = 'debuginfo'
+
+[term]
+color = 'always'
