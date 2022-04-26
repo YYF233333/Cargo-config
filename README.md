@@ -8,5 +8,5 @@ personal cargo config presetting
 
 ## Installation
 ```bash
-curl https://github.com/YYF233333/Cargo-config/blob/main/config.toml -o $HOME/.cargo/config.toml
+curl https://raw.githubusercontent.com/YYF233333/Cargo-config/main/config.toml -o $HOME/.cargo/config.toml
 ```
